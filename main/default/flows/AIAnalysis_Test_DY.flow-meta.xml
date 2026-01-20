@@ -43,7 +43,7 @@
             <conditionLogic>and</conditionLogic>
             <conditions>
                 <leftValueReference>GetIds</leftValueReference>
-                <operator>IsEmpty</operator>
+                <operator>IsNull</operator>
                 <rightValue>
                     <booleanValue>false</booleanValue>
                 </rightValue>
@@ -84,14 +84,6 @@
         <connector>
             <targetReference>Assign_ids</targetReference>
         </connector>
-        <filterLogic>and</filterLogic>
-        <filters>
-            <field>pharos__Analysis_Status__c</field>
-            <operator>EqualTo</operator>
-            <value>
-                <stringValue>Not Started</stringValue>
-            </value>
-        </filters>
         <getFirstRecordOnly>true</getFirstRecordOnly>
         <object>pharos__Issue__c</object>
         <storeOutputAutomatically>true</storeOutputAutomatically>
@@ -103,7 +95,7 @@
             <targetReference>Get_Issues</targetReference>
         </connector>
         <object>pharos__Issue__c</object>
-        <recordTriggerType>Update</recordTriggerType>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
         <triggerType>RecordAfterSave</triggerType>
     </start>
     <status>Obsolete</status>
