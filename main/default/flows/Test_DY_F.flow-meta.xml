@@ -31,10 +31,46 @@
             <field>CloseDate</field>
         </inputAssignments>
         <inputAssignments>
+            <field>Contact_First_Name__c</field>
+            <value>
+                <elementReference>$Record.FirstName</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Contact_last_Name__c</field>
+            <value>
+                <elementReference>$Record.LastName</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
             <field>Name</field>
         </inputAssignments>
         <inputAssignments>
+            <field>Phone_Test__c</field>
+            <value>
+                <elementReference>$Record.HomePhone</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Phone__c</field>
+            <value>
+                <elementReference>$Record.MobilePhone</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>SSN__c</field>
+            <value>
+                <elementReference>$Record.SSN__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
             <field>StageName</field>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Token__c</field>
+            <value>
+                <elementReference>$Record.Token__c</elementReference>
+            </value>
         </inputAssignments>
         <object>Opportunity</object>
         <storeOutputAutomatically>true</storeOutputAutomatically>
@@ -49,5 +85,5 @@
         <recordTriggerType>CreateAndUpdate</recordTriggerType>
         <triggerType>RecordAfterSave</triggerType>
     </start>
-    <status>Obsolete</status>
+    <status>Active</status>
 </Flow>

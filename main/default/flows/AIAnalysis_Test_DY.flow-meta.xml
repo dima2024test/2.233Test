@@ -25,7 +25,7 @@
             <assignToReference>GetIds</assignToReference>
             <operator>Add</operator>
             <value>
-                <elementReference>Get_Issues.Id</elementReference>
+                <elementReference>$Record.Id</elementReference>
             </value>
         </assignmentItems>
         <connector>
@@ -95,10 +95,10 @@
             <targetReference>Get_Issues</targetReference>
         </connector>
         <object>pharos__Issue__c</object>
-        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <recordTriggerType>Create</recordTriggerType>
         <triggerType>RecordAfterSave</triggerType>
     </start>
-    <status>Obsolete</status>
+    <status>Active</status>
     <variables>
         <name>GetIds</name>
         <dataType>String</dataType>
