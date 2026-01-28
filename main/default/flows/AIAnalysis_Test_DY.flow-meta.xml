@@ -84,6 +84,21 @@
         <connector>
             <targetReference>Assign_ids</targetReference>
         </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>pharos__Analysis_Status__c</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue>Completed</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
         <getFirstRecordOnly>true</getFirstRecordOnly>
         <object>pharos__Issue__c</object>
         <storeOutputAutomatically>true</storeOutputAutomatically>
