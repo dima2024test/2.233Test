@@ -43,6 +43,12 @@
             </value>
         </inputAssignments>
         <inputAssignments>
+            <field>Description</field>
+            <value>
+                <elementReference>$Record.TEst_En_field__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
             <field>Name</field>
         </inputAssignments>
         <inputAssignments>
